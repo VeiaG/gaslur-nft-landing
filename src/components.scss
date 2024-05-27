@@ -42,6 +42,7 @@
       font-weight: 400;
       font-size: 2rem;
       line-height: 3rem;
+      text-wrap:nowrap;
     }
     &::after {
       content: "";
@@ -81,14 +82,40 @@
   border-radius: 1.25rem;
   color: #bcbcbc;
   font-family: "Poppins", sans-serif;
+  
+  transition-duration:  0.3s;
+  transition-timing-function: ease-in-out;
   &--lg {
     border-radius: 2rem;
   }
   &--secondary {
+    transition-property: filter, transform,color,outline-color;
+    color: #d7d7d7;
     outline: 1px solid #d7d7d7;
     outline-offset: -1px;
+    &:hover{
+      color:#fff !important;
+      outline-color: #fff;
+    }
   }
   &--primary {
+    transition-property: filter,background-position, transform,color;
     background: var(--gradient-color);
+    background-size:200%;
+    color: #fff;
+    &:hover{
+      background-position: 100%;
+    }
+  }
+  &--ghost{
+    transition-property: filter,transform,background-color;
+    background:rgba(255,255,255,0);
+    &:hover{
+      background:rgba(255, 255, 255, 0.08);
+    }
+  }
+  &:active{
+    transform:translateY(2px);
+    filter:brightness(90%);
   }
 }
