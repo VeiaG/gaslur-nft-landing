@@ -20,7 +20,21 @@
   &__image {
     width: 100%;
     aspect-ratio: 0.95;
+    transition: transform 0.3s ease-in-out;
+  }
+  &__image-wrapper{
+    width:fit-content;
+    height:fit-content;
+    aspect-ratio: 0.95;
+    overflow: hidden;
     border-radius: 1.25rem;
+    
+  }
+  &:hover{
+    .card__image{
+      transform:scale(1.1);
+      
+    }
   }
   &__content {
     display: flex;
@@ -99,7 +113,7 @@
     }
   }
   &--primary {
-    transition-property: filter,background-position, transform,color;
+    transition-property: filter,background-position, transform;
     background: var(--gradient-color);
     background-size:200%;
     color: #fff;

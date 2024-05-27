@@ -40,44 +40,48 @@
               </button>
             </div>
           </div>
-          <div class="hero__card">
-            <img src="./hero_1.jpg" alt="" class="hero__card-image">
-            <div class="hero__card-content">
-              <div class="hero__card-profile">
-                <div class="avatar">
-                  <img src="./hero_avatar.jpg" alt="" >
+          <div class="hero__card-wrapper">
+            <div class="hero__card">
+              <img src="./hero_1.jpg" alt="" class="hero__card-image">
+              <div class="hero__card-content">
+                <div class="hero__card-profile">
+                  <div class="avatar">
+                    <img src="./hero_avatar.jpg" alt="" >
+                  </div>
+                  <div class="hero__card-profile-text">
+                    <h3>
+                      Laura
+                    </h3>
+                    <p>
+                      0.21 Weth
+                    </p>
+                  </div>
                 </div>
-                <div class="hero__card-profile-text">
-                  <h3>
-                    Laura
-                  </h3>
-                  <p>
-                    0.21 Weth
-                  </p>
+                <div class="hero__card-activity">
+                  <h3>WE ARE HERE</h3>
+                  <div class="hero__card-likes">
+                    <img src="./icons/heart.svg" alt="">
+                    <span>25</span>
+                  </div>
                 </div>
               </div>
-              <div class="hero__card-activity">
-                <h3>WE ARE HERE</h3>
-                <div class="hero__card-likes">
-                  <img src="./icons/heart.svg" alt="">
-                  <span>25</span>
-                </div>
-              </div>
+              <div class="hero__card-bloom hero__card-bloom--one"></div>
+              <div class="hero__card-bloom hero__card-bloom--two"></div>
             </div>
-            <div class="hero__card-bloom hero__card-bloom--one"></div>
-            <div class="hero__card-bloom hero__card-bloom--two"></div>
           </div>
       </section>
-      <section class="hot">
-        <div class="hot__title">
+      <section class="hot" >
+        <div class="hot__title" data-animate>
           <h2>Hot auctions</h2>
           <span>
             View all <img src="./icons/arrow-right.svg" alt="">
           </span>
         </div>
-        <div class="hot__content">
+        <div class="hot__content" data-animate>
           <div class="card">
-            <img src="./hot1.jpg" alt="" class="card__image">
+            <div class="card__image-wrapper">
+              <img src="./hot1.jpg" alt="" class="card__image">
+            </div>
             <div class="card__title">
               <h3>Lorem Ipsum</h3>
               <h4>1.20 Weth</h4>
@@ -90,7 +94,9 @@
             </div>
           </div>
           <div class="card">
-            <img src="./hot2.jpg" alt="" class="card__image">
+            <div class="card__image-wrapper">
+              <img src="./hot2.jpg" alt="" class="card__image">
+            </div>
             <div class="card__title">
               <h3>Dolor sit amet</h3>
               <h4>0.21 Weth</h4>
@@ -103,7 +109,9 @@
             </div>
           </div>
           <div class="card">
-            <img src="./hot3.jpg" alt="" class="card__image">
+            <div class="card__image-wrapper">
+              <img src="./hot3.jpg" alt="" class="card__image">
+            </div>
             <div class="card__title">
               <h3>Dignissim curabitu..</h3>
               <h4>0.01 Weth</h4>
@@ -116,7 +124,9 @@
             </div>
           </div>
           <div class="card">
-            <img src="./hot4.jpg" alt="" class="card__image">
+            <div class="card__image-wrapper">
+             <img src="./hot4.jpg" alt="" class="card__image">
+            </div>
             <div class="card__title">
               <h3>Amet pellentesq..</h3>
               <h4>0.55 Weth</h4>
@@ -131,10 +141,10 @@
         </div>
       </section>
       <section class="getting-started">
-        <h1>Getting started</h1>
-        <p>Eu, molestie commodo, enim pellentesque turpis integer sagittis</p>
+        <h1 data-animate>Getting started</h1>
+        <p data-animate>Eu, molestie commodo, enim pellentesque turpis integer sagittis</p>
         <div class="getting-started__grid">
-          <div class="getting-started__grid-item">
+          <div class="getting-started__grid-item" data-animate>
             <div class="getting-started__grid-logo">
               <img src="./icons/shield-check.svg" alt="">
             </div>
@@ -142,7 +152,7 @@
               Connect your wallet
             </p>
           </div>
-          <div class="getting-started__grid-item">
+          <div class="getting-started__grid-item" data-animate>
             <div class="getting-started__grid-logo">
               <img src="./icons/archive.svg" alt="">
             </div>
@@ -150,7 +160,7 @@
               Posuere urna, sit amet molestie leo
             </p>
           </div>
-          <div class="getting-started__grid-item">
+          <div class="getting-started__grid-item" data-animate>
             <div class="getting-started__grid-logo">
               <img src="./icons/file-media.svg" alt="">
             </div>
@@ -158,7 +168,7 @@
               Semper pretium libero sed quam ac integer ut
             </p>
           </div>
-          <div class="getting-started__grid-item">
+          <div class="getting-started__grid-item" data-animate>
             <div class="getting-started__grid-logo">
               <img src="./icons/rocket.svg" alt="">
             </div>
@@ -169,7 +179,7 @@
         </div>
       </section>
       <section class="discover">
-        <div class="discover__title">
+        <div class="discover__title" data-animate>
           <h2>Discover</h2>
           <div class="discover__filter">
             <button class="discover__filter-item btn btn--large btn--ghost">
@@ -190,9 +200,11 @@
             </button>
           </div>
         </div>
-        <div class="discover__content">
+        <div class="discover__content" data-animate>
           <div class="card">
+            <div class="card__image-wrapper">
             <img src="./discover1.jpg" alt="" class="card__image">
+            </div>  
             <div class="card__title">
               <h3>Lorem Ipsum</h3>
               <h4>1.20 Weth</h4>
@@ -205,7 +217,9 @@
             </div>
           </div>
           <div class="card">
+            <div class="card__image-wrapper">
             <img src="./discover2.jpg" alt="" class="card__image">
+            </div>
             <div class="card__title">
               <h3>Dolor sit amet</h3>
               <h4>0.21 Weth</h4>
@@ -218,7 +232,9 @@
             </div>
           </div>
           <div class="card">
+            <div class="card__image-wrapper">
             <img src="./discover3.jpg" alt="" class="card__image">
+            </div>
             <div class="card__title">
               <h3>Dignissim curabitu..</h3>
               <h4>0.01 Weth</h4>
@@ -231,7 +247,9 @@
             </div>
           </div>
           <div class="card">
+            <div class="card__image-wrapper">
             <img src="./discover4.jpg" alt="" class="card__image">
+            </div>
             <div class="card__title">
               <h3>Amet pellentesq..</h3>
               <h4>0.55 Weth</h4>
@@ -244,7 +262,9 @@
             </div>
           </div>
           <div class="card">
+            <div class="card__image-wrapper">
             <img src="./discover5.jpg" alt="" class="card__image">
+            </div>  
             <div class="card__title">
               <h3>Lorem Ipsum</h3>
               <h4>1.20 Weth</h4>
@@ -257,7 +277,9 @@
             </div>
           </div>
           <div class="card">
+            <div class="card__image-wrapper">
             <img src="./discover6.jpg" alt="" class="card__image">
+            </div>  
             <div class="card__title">
               <h3>Dolor sit amet</h3>
               <h4>0.21 Weth</h4>
@@ -270,7 +292,9 @@
             </div>
           </div>
           <div class="card">
+            <div class="card__image-wrapper">
             <img src="./discover7.jpg" alt="" class="card__image">
+            </div>  
             <div class="card__title">
               <h3>Dignissim curabitu..</h3>
               <h4>0.01 Weth</h4>
@@ -283,7 +307,9 @@
             </div>
           </div>
           <div class="card">
+            <div class="card__image-wrapper">
             <img src="./discover8.jpg" alt="" class="card__image">
+            </div>
             <div class="card__title">
               <h3>Amet pellentesq..</h3>
               <h4>0.55 Weth</h4>
@@ -300,8 +326,8 @@
           LOAD MORE
         </button>
       </section>
-      <footer class="footer">
-        <div class="footer__content">
+      <footer class="footer" >
+        <div class="footer__content" data-animate>
           <h1>
             Etiam et id tincidunt faucibus mollis a sociis pretium fermentum quis magna faucibus lacus.
           </h1>
@@ -328,7 +354,7 @@
             </div>
           </div>
         </div>
-        <div class="footer__copyright">
+        <div class="footer__copyright"  data-animate>
           <div class="footer__social-links">
             <a href="">
               <img src="./icons/instagram.svg" alt="">

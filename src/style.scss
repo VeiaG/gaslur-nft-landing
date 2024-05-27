@@ -196,6 +196,7 @@ $desktop: 1280px;
   }
   @media(max-width:$mobile){
     flex-direction: column-reverse;
+    
     gap:4rem;
     margin-top:4rem;
   } 
@@ -272,10 +273,10 @@ $desktop: 1280px;
     backdrop-filter: blur(555px);
     padding: 3rem 3.5rem 3.5rem;
     height:fit-content;
-    place-self: center;
-    @media(max-width:$mobile){
-      width:75%;
-    } 
+    
+
+   
+
     //gradient border workaround
     &::before {
       content: "";
@@ -368,6 +369,18 @@ $desktop: 1280px;
         right: -4rem;
       }
     }
+  }
+  &__card-wrapper{
+    place-self: center;
+    @media(max-width:$mobile){
+      width:75%;
+    } 
+    width: fit-content;
+    height: fit-content;
+    transition: transform 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 100vw;
+
   }
 }
 .hot {
